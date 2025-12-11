@@ -30,19 +30,26 @@
     color: #bff0ff;
   }
 
-  button {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #bff0ff;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+ button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #bff0ff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;           /* 中央寄せ */
+  margin: 20px auto;        /* 上下左右中央 */
+  text-shadow: none !important;  /* 影オフ */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);  /* ボタンに立体感 */
+}
 
-  button:hover {
-    background-color: #6adafc;
-  }
+button:hover {
+  background-color: #6adafc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);  /* ホバー時軽く */
+  transform: translateY(-1px);             /* 少し浮かせる */
+}
+
 
   .result {
     margin-top: 120px;
