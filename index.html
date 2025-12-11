@@ -52,7 +52,7 @@
     background: rgba(0,0,0,0.3); /* 結果部分にも薄い背景 */
     padding: 20px;
     border-radius: 10px;
-    display: inline-block;
+    display: none; 
   }
 </style>
 </head>
@@ -90,6 +90,7 @@ function drawOmikuji() {
   document.getElementById("result").innerHTML =
     `<p>🌸 あなたの運勢は… <b>${fortune}</b>！</p>
      <p>🎓 ラッキー教科は <b>${subject}（${field}）</b> ✨</p>`;
+  document.getElementById("result").style.display = "block";  // これ追加
 }
 </script>
 
